@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 * Unbootstrap
 * 
@@ -11,8 +12,6 @@
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 */
 
-
-
 @font-face {
   font-family: 'FontAwesome';
   src: url('../font/fontawesome-webfont.eot?v=4.3.0');
@@ -21,11 +20,13 @@
   font-style: normal;
 }
 
+
+
 audio,canvas,video,article,aside,details,figcaption,figure,footer,header,hgroup,nav,menu,meter,details,section,footer {  display: block;z-index:-1}
 audio:not([controls]) {display: none;}
 html {font-size: 100%;}
 .mobile {display:none;}
-body {margin:0 auto;width:100%;z-index:0}
+body {margin:0 auto;width:100%;z-index:0; -webkit-backface-visibility: hidden;}
 .container {margin:10px;}
 .fixed {position:fixed;z-index:1}
 .indent {margin-left:40px;}
@@ -1876,20 +1877,7 @@ hr {clear:both;border:0px solid #fff}
 .shadow-raised {box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;}
 .shadow-curve {box-shadow:0 0 15px rgba(0,0,0,0.6);}
 
-/*print*/
-@media print {
-body {background:#fff;color:#000;}
-a[href]:after { content: " (" attr(href) ")"; }
-abbr[title]:after { content: " (" attr(title) ")"; }
 
-header menu, header div , header ul {display:none;}
-
-﻿  article, section, header, article, footer, .span1, .span2,  .span3,  .span4,  .span5,  .span6,  .span7,  .span8, .span9, .span10, .span11, .span12 {
-﻿  width: auto; float: none;  margin-left: 10px;margin-right: 10px; padding-left: 10px; padding-right: 10px;
-
-}
-
-@charset "UTF-8";
 /*
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
@@ -1902,9 +1890,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
-  -webkit-backface-visibility: hidden;
-}
+
 .animated {
   -webkit-animation-duration: 1s;
      -moz-animation-duration: 1s;
@@ -5169,6 +5155,18 @@ aside,section {width:100%;display:block;float:left;clear:both;border:1px solid r
 
 
 
+/*print*/
+@media print {
+body {background:#fff;color:#000;}
+a[href]:after { content: " (" attr(href) ")"; }
+abbr[title]:after { content: " (" attr(title) ")"; }
+
+header menu, header div , header ul {display:none;}
+
+﻿  article, section, header, article, footer, .span1, .span2,  .span3,  .span4,  .span5,  .span6,  .span7,  .span8, .span9, .span10, .span11, .span12 {
+﻿  width: auto; float: none;  margin-left: 10px;margin-right: 10px; padding-left: 10px; padding-right: 10px;
+
+}
 
 /* Custom sizes
 */
